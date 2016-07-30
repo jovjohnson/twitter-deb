@@ -1,0 +1,14 @@
+{
+  "name": "animate-js",
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "homepage": "https://github.com/jovjohnson/twitter-deb",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
