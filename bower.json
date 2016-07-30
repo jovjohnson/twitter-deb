@@ -10,5 +10,8 @@
     "bower_components",
     "test",
     "tests"
-  ]
+  ],
+  "dependencies": {
+    "chart.js": "npm:chart.js#^2.2.1"
+  }
 }

@@ -5,7 +5,7 @@
     <link rel='stylesheet' href='/stylesheets/style.css' />
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.0/angular.min.js"></script>
-    <script src="node_modules/chart.js"></script>
+    <script src="/bower_components/chart.js/dist/Chart.min.js"></script>
     <script src="/javascripts/module.js"></script>
     <script src="/javascripts/services.js"></script>
     <script src="/javascripts/controllers.js"></script>
@@ -13,7 +13,7 @@
   <body ng-app='debateApp' ng-controller='mainController'>
 
     <ul>
-      <li ng-repeat='tweet in tweets'>
+      <li ng-repeat='tweet in tweets track by $index'>
         {{tweet}}
       </li>
     </ul>
