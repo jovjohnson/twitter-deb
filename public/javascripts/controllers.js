@@ -3,9 +3,13 @@
 var app = angular.module('debateApp');
 
 app.controller('mainController', function($scope, $http, Debate){
+//   var ctx = document.getElementById("myChart");
+//   var myLineChart = Chart.Line(ctx, {
+//     data: data,
+//     options: options
+// });
 
   Debate.get().then(function(res) {
-    $scope.tweets = res.data;
     console.log(res.data);
   }, function(err) {
     console.log(err);
