@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title><%= title %></title>
+    <title>Who Is Winning?</title>
+    <link href='https://fonts.googleapis.com/css?family=Amatic+SC:400,700' rel='stylesheet' type='text/css'>
     <link rel='stylesheet' href='/stylesheets/style.css' />
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.0/angular.min.js"></script>
@@ -12,6 +13,9 @@
     <script src="/javascripts/controllers.js"></script>
   </head>
   <body ng-app='debateApp' ng-controller='mainController'>
+    <div class="head">
+      <h1 class="pg-title">Who Is Winning?</h1>
+    </div>
 
     <canvas id="doughnut" class="chart chart-doughnut"
       chart-data="data" chart-labels="labels" chart-colors="colors">

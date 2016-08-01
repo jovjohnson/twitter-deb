@@ -3,6 +3,16 @@ body {
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
+div.head {
+  margin-top: 0px;
+}
+
+h1.pg-title {
+  font-family: 'Amatic SC', cursive;
+  text-align: center;
+  font-size: 5.5em;
+}
+
 a {
   color: #00B7FF;
 }
