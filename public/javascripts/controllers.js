@@ -9,12 +9,13 @@ app.controller('mainController', function($scope, $http, Debate){
 //     options: options
 // });
 
-  $scope.labels = ["Download Sales", "In-Store Sales", "Mail-Order Sales"];
+
 
 
   Debate.get().then(function(res) {
     console.log(res.data);
     $scope.data = [res.data[0].value, res.data[1].value, res.data[2].value];
+    $scope.labels = [res.data[0].choice, res.data[1].choice, res.data[2].choice];
 
 
 
