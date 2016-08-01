@@ -21,9 +21,9 @@ app.controller('mainController', function($scope, $http, Debate){
     $scope.colors = ['#80deea', '#f94a40', '#717984', '#F1C40F'];
 
     if(res.data[0].value > res.data[1].value) {
-      $scope.winner = res.data[0].choice;
+      $scope.winner = res.data[0].choice.toUpperCase();
     } else {
-      $scope.winner = res.data[1].choice;
+      $scope.winner = res.data[1].choice.toUppercase();
     }
 
     console.log('winner:',$scope.winner)
