@@ -6,14 +6,16 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.0/angular.min.js"></script>
     <script src="/bower_components/chart.js/dist/Chart.min.js"></script>
+    <script src="/javascripts/angular-chart.min.js"></script>
     <script src="/javascripts/module.js"></script>
     <script src="/javascripts/services.js"></script>
     <script src="/javascripts/controllers.js"></script>
   </head>
   <body ng-app='debateApp' ng-controller='mainController'>
 
-    <canvas id="myChart" width="400" height="400"></canvas>
-
+    <canvas id="doughnut" class="chart chart-doughnut"
+      chart-data="data" chart-labels="labels">
+    </canvas> 
     <!-- <ul>
       <li ng-repeat='tweet in tweets track by $index'>
         {{tweet}}
