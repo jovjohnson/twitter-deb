@@ -17,8 +17,8 @@
     <div class="head">
       <h1 class="pg-title">Who Is Winning?</h1>
     </div>
-    <div class="lead">
-      {{winner}}
+    <div class="lead" ng-model="winner">
+      <span ng-if="response">{{winner}}</span>
     </div>
 
     <canvas id="doughnut" class="chart chart-doughnut"

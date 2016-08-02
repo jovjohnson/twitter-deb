@@ -14,6 +14,7 @@ app.controller('mainController', function($scope, $http, Debate){
 
   Debate.get().then(function(res) {
     console.log(res.data);
+    $scope.response = res.data;
     $scope.winner;
 
     $scope.data = [res.data[0].value, res.data[1].value, res.data[2].value];
