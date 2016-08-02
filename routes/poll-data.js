@@ -8,6 +8,13 @@ router.get('/', function(req, res) {
   pollster.charts({topic: '2016-president'}, function(response){
     res.send(response[0].estimates);
   });
-})
+});
+
+router.get('/state', function(req, res) {
+  pollster.charts({state: 'MA'}, function(resp){
+    console.log(resp);
+    res.send(resp);
+  });
+});
 
 module.exports = router;
