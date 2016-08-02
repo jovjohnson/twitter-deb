@@ -18,7 +18,8 @@ div.lead {
   text-align: center;
   margin-bottom: 52px;
   color: #80deea;
-  font-size: 41px;
+  font-size: 65px;
+  font-family: 'Open Sans Condensed', sans-serif;
 }
 
 a {

@@ -16,7 +16,7 @@ app.controller('mainController', function($scope, $http, Debate){
     console.log(res.data);
     $scope.winner;
 
-    $scope.data = [res.data[0].value, 55, res.data[2].value];
+    $scope.data = [res.data[0].value, res.data[1].value, res.data[2].value];
     $scope.labels = [res.data[0].choice, res.data[1].choice, res.data[2].choice];
     $scope.colors = ['#80deea', '#f94a40', '#717984', '#F1C40F'];
 
