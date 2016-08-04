@@ -12,6 +12,7 @@ h1.pg-title {
   text-align: center;
   font-size: 7.5em;
   margin-bottom: 15px;
+  font-weight: 700;
 }
 
 div.lead {
@@ -24,4 +25,8 @@ div.lead {
 
 a {
   color: #00B7FF;
+}
+
+ul.dropdown-content li {
+  color: red;
 }

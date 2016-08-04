@@ -3,14 +3,9 @@
 var app = angular.module('debateApp');
 
 app.controller('mainController', function($scope, $http, Debate){
-//   var ctx = document.getElementById("myChart");
-//   var myLineChart = Chart.Line(ctx, {
-//     data: data,
-//     options: options
-// });
-
-
-
+  $(document).ready(function() {
+      $('select').material_select();
+    });
 
   Debate.get().then(function(res) {
     console.log(res.data);
