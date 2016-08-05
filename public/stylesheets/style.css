@@ -1,3 +1,36 @@
+@-webkit-keyframes swing {
+  0% {
+    transform: rotate(-5deg);
+  }
+  50% {
+    transform: rotate(10deg);
+  }
+  100% {
+    transform: rotate(-5deg);
+  }
+}
+@-moz-keyframes swing {
+  0% {
+    transform: rotate(-5deg);
+  }
+  50% {
+    transform: rotate(10deg);
+  }
+  100% {
+    transform: rotate(-5deg);
+  }
+}
+@-o-keyframes swing {
+  0% {
+    transform: rotate(-5deg);
+  }
+  50% {
+    transform: rotate(10deg);
+  }
+  100% {
+    transform: rotate(-5deg);
+  }
+}
 @keyframes swing {
   0% {
     transform: rotate(-5deg);
@@ -47,4 +80,9 @@ ul.dropdown-content li {
 .hillary {
   height: 230px;
   width: 230px;
+  -webkit-animation: swing 1s infinite;
+  -moz-animation: swing 1s infinite;
+  -o-animation: swing 1s infinite;
+  animation: swing 1s infinite;
+  animation-timing-function: ease;
 }
