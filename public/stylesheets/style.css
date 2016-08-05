@@ -1,3 +1,16 @@
+@keyframes swing {
+  0% {
+    transform: rotate(-5deg);
+  }
+  50% {
+    transform: rotate(10deg);
+  }
+  100% {
+    transform: rotate(-5deg);
+  }
+}
+
+
 body {
   padding: 5px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
@@ -29,4 +42,9 @@ a {
 
 ul.dropdown-content li {
   color: red;
+}
+
+.hillary {
+  height: 230px;
+  width: 230px;
 }

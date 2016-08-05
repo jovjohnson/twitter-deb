@@ -2,12 +2,8 @@
   "name": "animate-js",
   "version": "0.0.0",
   "private": true,
-  "main": "app.js",
   "scripts": {
-    "start": "node app.js"
-  },
-  "engines": {
-    "node": "6.3.1"
+    "start": "node ./bin/www"
   },
   "dependencies": {
     "angular-chart.js": "^1.0.0",
@@ -19,9 +15,6 @@
     "ejs": "~2.3.3",
     "express": "~4.13.1",
     "morgan": "~1.6.1",
-    "pollster": "0.0.3",
-    "request": "^2.74.0",
-    "serve-favicon": "~2.3.0",
-    "twitter": "^1.4.0"
+    "serve-favicon": "~2.3.0"
   }
 }
