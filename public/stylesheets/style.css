@@ -63,7 +63,7 @@ h1.pg-title {
 
 div.lead {
   margin-bottom: 52px;
-  margin-left: 15px;
+  /*margin-left: 35px;*/
   color: #80deea;
   font-size: 65px;
   font-family: 'Open Sans Condensed', sans-serif;
@@ -76,24 +76,28 @@ a {
 
 h1.winner {
   /*display: inline-block;*/
-  margin-left: 115px;
+  margin-right: 25px;
   font-size: 75px;
 }
 
 canvas {
-  margin-left: inherit;
+  margin-left: 111px;
+}
+
+#doughnut {
+
 }
 
 .hillary {
-  height: 215px;
-  width: 215px;
-  margin-left: 85px;
+  height: 235px;
+  width: 235px;
+  margin-left: 0px;
+  text-align: center;
   -webkit-animation: swing 1s infinite;
   -moz-animation: swing 1s infinite;
   -o-animation: swing 1s infinite;
   animation: swing 1s infinite;
   animation-timing-function: ease;
-
 }
 
 .donut {
