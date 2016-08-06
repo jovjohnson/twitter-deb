@@ -62,7 +62,7 @@ h1.pg-title {
 }
 
 div.lead {
-  margin-bottom: 52px;
+  margin-bottom: 25px;
   /*margin-left: 35px;*/
   color: #80deea;
   font-size: 65px;
@@ -120,8 +120,6 @@ img.donald {
   animation-timing-function: ease;
 }
 
-
-
 img.gary {
   height: 175px;
   width: 150px;
@@ -131,4 +129,12 @@ img.gary {
   -o-animation: swing 1s infinite;
   animation: swing 1s infinite;
   animation-timing-function: ease;
+}
+
+h2#repub {
+  color: #f94a40;
+}
+
+h2#lib {
+  color: #f9e504;
 }
