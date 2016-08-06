@@ -62,9 +62,7 @@ h1.pg-title {
 }
 
 div.lead {
-  /*text-align: center;*/
   margin-bottom: 52px;
-  margin-right: 45px;
   color: #80deea;
   font-size: 65px;
   font-family: 'Open Sans Condensed', sans-serif;
@@ -78,8 +76,10 @@ ul.dropdown-content li {
   color: red;
 }
 
-chart {
-  float: right;
+h1.winner {
+  /*display: inline-block;*/
+  margin-left: 45px;
+  font-size: 75px;
 }
 
 .hillary {
