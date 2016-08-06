@@ -63,31 +63,40 @@ h1.pg-title {
 
 div.lead {
   margin-bottom: 52px;
+  margin-left: 15px;
   color: #80deea;
   font-size: 65px;
   font-family: 'Open Sans Condensed', sans-serif;
+  text-align: center;
 }
 
 a {
   color: #00B7FF;
 }
 
-ul.dropdown-content li {
-  color: red;
-}
-
 h1.winner {
   /*display: inline-block;*/
-  margin-left: 45px;
+  margin-left: 115px;
   font-size: 75px;
 }
 
+canvas {
+  margin-left: inherit;
+}
+
 .hillary {
-  height: 230px;
-  width: 230px;
+  height: 215px;
+  width: 215px;
+  margin-left: 85px;
   -webkit-animation: swing 1s infinite;
   -moz-animation: swing 1s infinite;
   -o-animation: swing 1s infinite;
   animation: swing 1s infinite;
   animation-timing-function: ease;
+
+}
+
+.donut {
+  max-width: 600px;
+  margin-left: 45px;
 }
