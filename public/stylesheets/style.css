@@ -76,7 +76,7 @@ a {
 
 h1.winner {
   /*display: inline-block;*/
-  margin-right: 25px;
+  margin-right: 0px;
   font-size: 75px;
 }
 
@@ -103,4 +103,32 @@ canvas {
 .donut {
   max-width: 600px;
   margin-left: 45px;
+}
+
+.losers {
+  text-align: center;
+}
+
+img.donald {
+  height: 150px;
+  width: 150px;
+  margin-top: 20px;
+  -webkit-animation: swing 1s infinite;
+  -moz-animation: swing 1s infinite;
+  -o-animation: swing 1s infinite;
+  animation: swing 1s infinite;
+  animation-timing-function: ease;
+}
+
+
+
+img.gary {
+  height: 175px;
+  width: 150px;
+  margin-bottom: -7px;
+  -webkit-animation: swing 1s infinite;
+  -moz-animation: swing 1s infinite;
+  -o-animation: swing 1s infinite;
+  animation: swing 1s infinite;
+  animation-timing-function: ease;
 }
