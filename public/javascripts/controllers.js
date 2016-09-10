@@ -25,14 +25,7 @@ app.controller('mainController', function($scope, $http, Debate){
     } else {
       $scope.winner = res.data[1].first_name.toUpperCase() + ' ' + res.data[1].choice.toUpperCase();
     }
-
     console.log('winner:',$scope.winner)
-
-
-
-
-
-
   }, function(err) {
     console.log(err);
   })
