@@ -14,8 +14,9 @@ router.get('/', function(req, res, next) {
     access_token_key: process.env.TOKEN_KEY,
     access_token_secret: process.env.TOKEN_SECRET
   });
-  var stream = client.stream('statuses/filter', {track: 'DNC'});
+  var stream = client.stream('statuses/filter', {track: 'Clinton'});
   var tweets = [];
+  var mention = 0;
   stream.on('data', function(tweet) {
     tweets.push(tweet.text);
     if(tweets.length === 10) {
