@@ -6,7 +6,8 @@ var pollster = require('pollster')
 
 router.get('/', function(req, res) {
   pollster.charts({topic: '2016-president'}, function(response){
-    res.send(response);
+    res.send(response[53].estimates);
+    console.log(response[53].estimates);
   });
 });
 
