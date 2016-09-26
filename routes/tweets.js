@@ -4,8 +4,6 @@ var router = express.Router();
 var Twitter = require('twitter');
 
 
-
-
 /* GET users listing. */
 router.get('/', function(req, res, next) {
   var client = new Twitter({
@@ -15,10 +13,12 @@ router.get('/', function(req, res, next) {
     access_token_secret: process.env.TOKEN_SECRET
   });
   var stream = client.stream('statuses/filter', {track: 'Clinton'});
-  var tweets = [];
+  // var tweets = [];
   var mention = 0;
   stream.on('data', function(tweet) {
-    tweets.push(tweet.text);
+    // tweets.push(tweet.text);
+    mention += 1;
+    console.log(mention)
     if(tweets.length === 10) {
       res.send(tweets);
     }
