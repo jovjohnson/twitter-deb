@@ -5,7 +5,7 @@ var Twitter = require('twitter');
 
 
 /* GET users listing. */
-router.get('/', function(req, res, next) {
+router.get('/clinton', function(req, res, next) {
   var client = new Twitter({
     consumer_key: process.env.CONSUMER_KEY,
     consumer_secret: process.env.CONSUMER_SECRET,
@@ -16,7 +16,27 @@ router.get('/', function(req, res, next) {
   // var tweets = [];
   var mention = 0;
   stream.on('data', function(tweet) {
-    // tweets.push(tweet.text);
+    tweets.push(tweet.text);
+    mention += 1;
+    console.log(mention)
+    if(tweets.length === 10) {
+      res.send(tweets);
+    }
+  });
+});
+
+router.get('/trump', function(req, res, next) {
+  var client = new Twitter({
+    consumer_key: process.env.CONSUMER_KEY,
+    consumer_secret: process.env.CONSUMER_SECRET,
+    access_token_key: process.env.TOKEN_KEY,
+    access_token_secret: process.env.TOKEN_SECRET
+  });
+  var stream = client.stream('statuses/filter', {track: 'Trump'});
+  // var tweets = [];
+  var mention = 0;
+  stream.on('data', function(tweet) {
+    tweets.push(tweet.text);
     mention += 1;
     console.log(mention)
     if(tweets.length === 10) {
