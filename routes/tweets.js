@@ -19,7 +19,6 @@ router.get('/clinton', function(req, res, next) {
   stream.on('data', function(tweet) {
     tweets.push(tweet.text);
     mention += 1;
-    console.log(mention)
     if(tweets.length === 10) {
       res.send(tweets);
     }
@@ -33,7 +32,6 @@ router.get('/trump', function(req, res, next) {
   stream.on('data', function(tweet) {
     tweets.push(tweet.text);
     mention += 1;
-    console.log(mention)
     if(tweets.length === 10) {
       res.send(tweets);
     }
