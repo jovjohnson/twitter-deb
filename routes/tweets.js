@@ -14,7 +14,7 @@ var client = new Twitter({
 router.get('/clinton', function(req, res, next) {
 //clinton
   var stream = client.stream('statuses/filter', {track: 'Clinton'});
-  // var tweets = [];
+  var tweets = [];
   var mention = 0;
   stream.on('data', function(tweet) {
     tweets.push(tweet.text);
@@ -27,7 +27,7 @@ router.get('/clinton', function(req, res, next) {
 //trump
 router.get('/trump', function(req, res, next) {
   var stream = client.stream('statuses/filter', {track: 'Trump'});
-  // var tweets = [];
+  var tweets = [];
   var mention = 0;
   stream.on('data', function(tweet) {
     tweets.push(tweet.text);
