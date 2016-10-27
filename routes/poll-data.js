@@ -17,4 +17,6 @@ router.get('/state', function(req, res) {
   });
 });
 
+//add state by state estimates
+
 module.exports = router;
